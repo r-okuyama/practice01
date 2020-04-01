@@ -1,0 +1,213 @@
+@charset "UTF-8";
+
+header h1{
+    width: 1300px;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* ウォーターフォオール型 */
+.main-wrap{
+    width: 1300px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.main-text{
+    margin-bottom: 6rem;
+}
+
+.main-text>p{
+    margin: 0.5rem;
+}
+
+.contents{
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+    position: relative;
+}
+
+.contents-box{
+    width: 1000px;
+    height: 20%;
+    margin: 0 auto;
+}
+
+.contents-box>ul>li{
+    width: 6rem;
+    height: 1rem;
+    text-align: center;
+    padding: 1.5rem;
+    margin: 1rem;
+    background-color: #e2eba3;
+}
+
+.contents-box>ul{
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.contents-box>ul>p{
+    color: #f68b58;
+    text-align: center;
+    font-size: 2.3rem;
+}
+
+.box1{
+    width: 800px;
+}
+
+.box2{
+    width: 700px;
+}
+
+.box3{
+    width: 600px;
+}
+
+.box4{
+    width: 500px;
+}
+
+
+.merritto>h3{
+    margin-bottom: 0.5rem;
+}
+
+.merritto>p{
+    margin-top: 0rem;
+}
+
+/* 吹き出し */
+.balloon{
+    height: 1.7rem;
+    display: inline-block;
+    margin: 1.5em 15px 1.5em 0;
+    padding: 7px 10px;
+    min-width: 120px;
+    max-width: 100%;
+    color: #555;
+    font-size: 16px;
+    background-color: #e0edff;
+    border-radius: 1.5rem;
+}
+
+.balloon:before{
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 35%;
+    margin-left: -15px;
+    border: 15px solid transparent;
+    border-bottom: 15px solid #e0edff;
+}
+
+#balloon1{
+    position: absolute;
+    top: 3rem;
+    left: 11rem;
+}
+
+#balloon2{
+    position: absolute;
+    top: 12rem;
+    left: 13rem;
+}
+
+#balloon3{
+    position: absolute;
+    top: 21rem;
+    left: 18rem;
+}
+
+#balloon4{
+    position: absolute;
+    top: 30rem;
+    right: 7.5rem;
+}
+
+#balloon5{
+    position: absolute;
+    top: 21rem;
+    right: 3rem;
+}
+
+#balloon6{
+    position: absolute;
+    top: 12rem;
+    right: 0rem;
+}
+
+.balloon>p{
+    margin: 0;
+    padding: 0;
+}
+/* ーーーーーーーーーーーーーーーー */
+
+/* アジャイル型 */
+.a-contents{
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.a-contents-wrap{
+    width: 100%;
+    height: auto;
+    border: solid 0.2rem #738851;
+    display: flex;
+    margin-top: 0.8rem;
+    margin-bottom: 2rem;
+    padding-top: 0.5rem;
+
+}
+
+.a-contents-box{
+    width: 1000px;
+    height: auto;
+    padding: 0;
+    margin-top: 0.5rem;
+}
+
+.a-list{
+    width: 200px;
+    height: auto;
+    border: solid 0.2rem #339900;
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 2.5rem;
+}
+
+.a-list>ul{
+    width: 100px;
+    height: auto;
+}
+
+.a-list>ul>p{
+    width: 8.3rem;
+    height: auto;
+    text-align: center;
+}
+
+.a-list>ul>li{
+    width: 8.3rem;
+    height: auto;
+    background-color: #e2eba3;
+    text-align: center;
+    list-style: none;
+}
+
+
+/* アジャイル吹き出し */
+#a-balloon{
+    position: absolute;
+    left: 7rem;
+    bottom: 41%;
+}

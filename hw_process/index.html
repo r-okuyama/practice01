@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <title>開発工程について</title>
+</head>
+<body>
+    <header>
+        <h1>開発工程について</h1>
+    </header>
+    <div class="main-wrap">
+        <!-- ウォーターフォオール型-->
+        <div class="main-text">　
+            <h2>【ウォーターフォール型】</h2>
+            <p>・最初にしっかりとした計画を立てた上で、要件定義から設計・開発・テスト・運用までに至る工程を順番に行う。</p>
+            <p>・上流から下流へ流れていくような工程を経るため、水の流れに例えて命名されたもの。</p>
+            <p>・下記に表すような『V字型』の構造で作業が進められる。</p>
+            <p>　⇨上流から下流は「要件定義〜システム構築」までの流れを表している。横にあるテストは、段階ごとのテストを表す。</p>
+        </div>
+        <div class="contents">
+            <div class="contents-box box1">
+                <ul>
+                <li>要件定義</li>
+                <p>⇦</p>
+                <li>リリース</li>
+                </ul>
+            </div>
+            <div class="contents-box box2">
+                <ul>
+                <li>基本設計</li>
+                <p>⇦</p>
+                <li>総合テスト</li>
+                </ul>
+            </div>
+            <div class="contents-box box3">
+                <ul>
+                <li>詳細設計</li>
+                <p>⇦</p>
+                <li>結合テスト</li>
+                </ul>
+            </div>
+            <div class="contents-box box4">
+                <ul>
+                <li>システム構築</li>
+                <p>⇦</p>
+                <li>単体テスト</li>
+                </ul>
+            </div>
+            <div>
+                <h3>＜メリット＞</h3>
+                <p>
+                ・リリース時にクライアントからのすべての要求をクリアできる。<br>
+                ・工程ごとのスケジュール管理がしやすい。（大規模開発に向いてる）
+                </p>
+                <h3>＜デメリット＞</h3>
+                <p>
+                ・途中で新たな仕様への変更が難しい。<br>
+                ・リリースまでに数ヶ月〜数年かかることもある。
+                </p>
+            </div>
+            <!--　吹き出し　-->
+            <div class="balloon water" id="balloon1">
+                <p>クライアントと打ち合わせ</p>
+            </div>
+            <div class="balloon water" id="balloon2">
+                <p>完成物のイメージのすり合わせ</p>
+            </div>
+            <div class="balloon water" id="balloon3">
+                <p>PGの作業内容の決定</p>
+            </div>
+            <div class="balloon water" id="balloon4">
+                <p>工程ごとにきちんと動いているか</p>
+            </div>
+            <div class="balloon water" id="balloon5">
+                <p>違う工程を合わせてもきちんと動くか</p>
+            </div>
+            <div class="balloon water" id="balloon6">
+                <p>完成物はイメージ通りにできているか</p>
+            </div>
+
+        </div> <!-- /.contents-->
+
+        <!-- アジャイル型-->
+            <div class="main-text">
+                <h2>【アジャイル型】</h2>
+                <p>・プロジェクトを細分化して、機能ごとに開発を進める方法。</p>
+                <p>・ざっくりとしたリリース計画を元に、すぐに実装してリリースを繰り返す。</p>
+            </div>
+            <div class="a-contents">
+                <div class="a-contents-wrap">
+                <div class="a-contents-box" id="a-box1">
+                    <div class="a-list"><ul>
+                    <li>設計</li><p>↓</p>
+                    <li>実装</li><p>↓</p>
+                    <li>テスト</li><p>↓</p>
+                    <li>リファクタリング</li>
+                    </ul></div> 
+                </div>
+                <div class="a-contents-box" id="a-box2">
+                    <div class="a-list"><ul>
+                    <li>設計</li><p>↓</p>
+                    <li>実装</li><p>↓</p>
+                    <li>テスト</li><p>↓</p>
+                    <li>リファクタリング</li>
+                    </ul></div> 
+                </div>
+                <div class="a-contents-box" id="a-box3">
+                    <div class="a-list"><ul>
+                    <li>設計</li><p>↓</p>
+                    <li>実装</li><p>↓</p>
+                    <li>テスト</li><p>↓</p>
+                    <li>リファクタリング</li>
+                    </ul></div> 
+                </div>
+                </div> <!-- /.a-contents-wrap -->
+                <div>
+                    <h3>＜メリット＞</h3>
+                    <p>
+                    ・リリースまでの時間が早い。<br>
+                    ・途中で仕様変更に対応しやすい。<br>
+                    ・重要度の高いものから着手することができる。
+                    </p>
+                    <h3>＜デメリット＞</h3>
+                    <p>
+                    ・リリース時には未完成な部分もある。<br>
+                    ・工程ごとのスケジュールが把握しづらい。<br>
+                    </p>
+                </div>
+                <div class="balloon" id="a-balloon">
+                     <p>※リファクタリング…　理解しづらいところを改善</p>
+                </div>
+            </div>  <!-- /.a-contents -->
+
+    </div> <!-- /.main-wrap-->
+    
+</body>
+</html>
